@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  font-family: poppins;
+}
+.dow h3 {
+  display: inline;
+  padding: 2px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+}
+
+.month {
+  max-width: 23rem;
+  background-color: mediumaquamarine;
+  margin: 0 0.4rem;
+  border-radius: 0.6rem;
+}
+
+.month-heading {
+  background-color: teal;
+}
+
+.month-title {
+  text-align: center;
+  padding: 0.8rem;
+  margin: 0;
+  color: #fff;
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.month-col {
+  column-span: 1;
+  text-align: center;
+  margin: 0.8rem 0;
+  color: #fff;
+}
+
+.month-col:hover{
+  background-color: #435cd9;
+  border-radius: 100px;
+}
+
+.birthday {
+  background-color: #1bdef1;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.birthday-2 {
+  background-color: #3c3c3c;
+  border-radius: 100px;
+  color: #fff;
+}
