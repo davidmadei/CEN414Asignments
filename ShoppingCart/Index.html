@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <!-- <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="cart2.css">
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+    <title>shopping cart</title>
+</head>
+<body>
+   
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                <a class="navbar-brand" href="#"><img src="img/fitnessred-logoo.png" width="40%" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                    <div class="d-inline-flex list-unstyled links">
+                        <div class="p-3 name"><li><a href="#" style="color: #fff;">Home</a></li></div>
+                        <div class="p-3 new"><li><a href="#" style="color: #fff;">Contact</a></li></div>
+                    </div>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#" id="home-btn">Shop&#x1F6CD; <span class="sr-only">(current)</span></a>
+                        </li>
+                       
+
+                        <li class="nav-item">
+                            <i class='bx bxs-cart' id="cart-icon"></i>
+                        
+                            <!-- content -->
+                            <li class ="nav-item cart">
+                                <h2 class="cart-title">Your Cart</h2>
+                                <!-- cart content -->
+                                <div class="cart-content">
+                                    <!-- test Box to decide how items are displayed incart -->
+                                    
+                                    <!-- <div class="cart-box">
+                                        <img src="gymimg/ps_aminobuild-3.png" class="cart-img" alt="">
+                                        <div class="detail-box">
+                                            <div class="cart-product-title">Amino Bulid</div>
+                                            <div class="cart-price">$25.00</div>
+                                            <input type="number" value="1" class="cart-quantity">
+                                        </div> -->
+
+                                        <!---REMOVE CART--->
+                                        <!-- <i class='bx bxs-trash-alt cart-remove'></i> -->
+        
+                                    <!-- </div> -->
+                                
+                                </div>
+
+                                <!-- total -->
+                                <div class="total">
+                                    <div class="total-title">Total</div>
+                                    <div class="total-price">$0</div>
+                                </div>
+
+                                <!-- buy button -->
+                                <button type="button" class="btn-buy">Place Order</button>
+
+                                <!-- cart close -->
+                                <i class='bx bx-x' id="cart-close"></i>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>      
+    
+    </div>
+
+    <div class="get d-flex">
+        <div class="container">
+            <div class="row">
+                <div  class="col text-center" style=" align-content:center;">
+                        <h2 class="text text-center pt-50 mt-5" style="font-size: 2.1rem; font-weight:700 ; color: aliceblue;"> SHOP WITH KALIUM</h2>
+                    <!-- <h3> SHOP KALIUM</h3> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gett">
+        <div class="container-fluid">
+            <div class="row" id="slid">
+                <div class="col-md-6">
+                    <!-- <h3>CATEGORIES</h3> -->
+                    <!-- <div class="cont">
+                        <button class="series">SERIES</button>
+                            <div class="series1">
+                                <a href="concenstrated.html"> Concentrated Series</a>
+                                <a href="Essential.html"> Essential Series</a> 
+                                <a href="perfomace.html"> Performance Series</a>
+                                <a href="premium.html"> Premium Series</a>
+                                <a href="sx-7.html"> Sx-7 Series</a>
+                            </div>
+                         
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <br>
+    <br>
+    <br> -->
+
+    <!-- SHOP SECTION -->
+    <section class="shopcontainer">
+        <div class="row">
+            <div class="col text-center" style=" align-content:center;">
+                <h2 class="text text-center  mt-5" style="font-size: 2.1rem; font-weight:700 ; color: aliceblue;"> PRODUCTS</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="shop-content">
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="amino.html"><img src="img/ps_aminobuild-300x375.png" class="product-img" alt="" ></a>
+                        <h2 class="product-title">Amino Bulid</h2>
+                        <span class="product-price">$25.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="anabolic.html"><img src="img/ps_anabolic_halo-300x375.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">ANABOLIC HALO </h2>
+                        <span class="product-price">$32.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="anotest.html"><img src="img/ps_anotest.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">ANOTEST </h2>
+                        <span class="product-price">$30.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="celltech.html"><img src="img/ps_celltech-300x375.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">CELL TECH </h2>
+                        <span class="product-price">$29.00 </span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="clear.html"><img src="img/prd-clearmuscle-550x688.png" width="90%" class="product-img"  alt=""></a>
+                        <h2 class="product-title">CLEAR MUSCLE</h2>
+                        <span class="product-price">$37.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="creacore.html"><img src="img/cs_creacore-300x375.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">CREACORE</h2>
+                        <span class="product-price">$40.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="hydro.html"><img src="img/ps_hydroxycut-300x375.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">HYDROXYCUT POWDER</h2>
+                        <span class="product-price">$29.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="iso.html"><img src="img/ps_iso_zero-300x375.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">ISO ZERO</h2>
+                        <span class="product-price">$24.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="nano.html"><img src="img/ps_nano_vapor-300x375.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">NANO VAPOR</h2>
+                        <span class="product-price">$19.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="platinum.html"><img src="img/prd-platinum-bcaa-550x688.png" width="90%" class="product-img" alt=""></a>
+                        <h2 class="product-title">PLATINUM-BCAA</h2>
+                        <span class="product-price">$35.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="push.html"><img src="img/ps_push10-300x375.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">PUSH 10</h2>
+                        <span class="product-price">$54.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="shatter.html"><img src="img/prd-shatter-sx7-550x688.png" width="90%" class="product-img" alt=""></a>
+                        <h2 class="product-title">SHATTER</h2>
+                        <span class="product-price">$17.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5" id="tac">
+                    <div class="product-box">
+                        <a href="utra.html"><img src="img/ultra_amino-300x375.png" class="product-img" alt=""></a>
+                        <h2 class="product-title">ULTRA AMINO</h2>
+                        <span class="product-price">$61.00</span>
+                        <i class='bx bxs-cart-download add-cart'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <footer class=" footer-32892 pb-0">
+        <div class="site-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md pr-md-5 mb-4 mb-md-0">
+                        <h3>About Us</h3>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam itaque unde facere repellendus, odio et iste voluptatum aspernatur ratione mollitia tempora eligendi maxime est, blanditiis accusamus. Incidunt, aut, quis!</p>
+              <ul class="list-unstyled quick-info mb-4">
+                <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-phone"></span> +1 291 3912 329</a></li>
+                <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-envelope"></span> info@gmail.com</a></li>
+              </ul>
+
+              <form action="#" class="subscribe">
+                <input type="text" class="form-control" placeholder="Enter your e-mail">
+                <input type="submit" class="btn btn-submit" value="Send">
+              </form>
+            </div>
+            <div class="col-md mb-4 mb-md-0">
+              <h3>Latest Tweet</h3>
+              <ul class="list-unstyled tweets">
+                <li class="d-flex">
+                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
+                </li>
+                <li class="d-flex">
+                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
+                </li>
+                <li class="d-flex">
+                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
+                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-md-3 mb-4 mb-md-0">
+              <h3>Instagram</h3>
+              <div class="row gallery">
+                <div class="col-6">
+                  <a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                  <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                </div>
+                <div class="col-6">
+                  <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+                  <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <div class="py-5 footer-menu-wrap d-md-flex align-items-center">
+                <ul class="list-unstyled footer-menu mr-auto">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Our works</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+                <div class="site-logo-wrap ml-auto">
+                  <a href="#" class="site-logo">
+                    KALIUM
+                  </a>
+                </div>
+              </div>
+            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="./cart2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+
+</body>
+</html>
